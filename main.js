@@ -101,18 +101,18 @@ while (!exitMenu) {
             let name = prompt("cual es el nombre de la persona?")
             let dob = prompt("¿Cuál es la fecha de nacimiento de la persona?")
             let startingAmount = prompt("¿Cuál es la cantidad inicial de la persona?")
-            let startingDebt = prompt("¿Cuál es la persona que comienza la deuda??")
+            let startingDebt = prompt("¿Cuál es la persona que comienza la deuda?")
             let persona = new Persona(name, dob, startingAmount, startingDebt)
             personas.push(persona)
             break;
         case "2":
             personChoice = SelectPerson(personas)
             let company = prompt("cual es el nombre de la empresa?")
-            let role = prompt("¿Cuál era el cargo en la empresa??")
+            let role = prompt("¿Cuál era el cargo en la empresa?")
             let salary = prompt("cual era tu salario?")
-            let start = prompt("¿Cuándo empezaste este trabajo??")
-            let end = prompt("¿Cuándo dejará/dejó este trabajo??")
-            let job = new Job(company, role, salary, start, end)
+            let start = prompt("¿Cuándo empezaste este trabajo?")
+            let end = prompt("¿Cuándo dejará/dejó este trabajo?")
+            let job = new Job(compania, rol, salario, empezar, terminar)
             personas[personChoice].addJob(job)
             break;
         case "3":
